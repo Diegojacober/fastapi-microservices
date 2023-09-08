@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-microservices"
+version = "0.1.0"
+description = ""
+authors = ["Diego <diegoalencar.jacober@gmail.ocm>"]
+readme = "README.md"
+packages = [{include = "python_microservices"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+databases = {extras = ["postgresql"], version = "^0.8.0"}
+httpx = "^0.24.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
